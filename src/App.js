@@ -46,8 +46,8 @@ function App() {
         {board.map((row, r) =>
           row.map((val, c) => (
             <div
-              key={\`\${r}-\${c}\`}
-              className={\`cell \${selectedCell?.[0] === r && selectedCell?.[1] === c ? 'selected' : ''}\`}
+              key={`${r}-${c}`}
+              className={`cell ${selectedCell?.[0] === r && selectedCell?.[1] === c ? 'selected' : ''}`}
               onClick={() => handleCellClick(r, c)}
             >
               {val}
