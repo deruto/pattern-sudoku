@@ -1,0 +1,41 @@
+.container {
+  padding: 20px;
+  max-width: 400px;
+  margin: auto;
+  text-align: center;
+}
+.grid {
+  display: grid;
+  grid-template-columns: repeat(9, 1fr);
+  gap: 2px;
+}
+.cell {
+  width: 35px;
+  height: 35px;
+  line-height: 35px;
+  border: 1px solid #ccc;
+  text-align: center;
+  font-size: 18px;
+}
+.selected {
+  background-color: #b0e0e6;
+}
+.number-pad {
+  margin-top: 15px;
+}
+.number-pad button {
+  margin: 2px;
+  padding: 10px;
+}
+.hints {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 5px;
+  margin-top: 20px;
+}
+.hint {
+  background-color: #f0f0f0;
+  padding: 5px;
+  border-radius: 4px;
+  font-size: 12px;
+}
